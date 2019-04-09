@@ -1,0 +1,1138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E06096B2243B7C700BBDBA6 /* UnsplashApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E06096A2243B7C700BBDBA6 /* UnsplashApiService.m */; };
+		0E3469BB2242FCA700199861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3469BA2242FCA700199861 /* AppDelegate.m */; };
+		0E3469C12242FCA700199861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3469BF2242FCA700199861 /* Main.storyboard */; };
+		0E3469C32242FCA800199861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3469C22242FCA800199861 /* Assets.xcassets */; };
+		0E3469C62242FCA800199861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3469C42242FCA800199861 /* LaunchScreen.storyboard */; };
+		0E3469C92242FCA800199861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3469C82242FCA800199861 /* main.m */; };
+		0E3469D32242FCA800199861 /* lemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3469D22242FCA800199861 /* lemonTests.m */; };
+		0E3469DE2242FCA800199861 /* lemonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3469DD2242FCA800199861 /* lemonUITests.m */; };
+		0E3D6C012243090C006CFCEA /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D6C002243090C006CFCEA /* MainTabBarController.m */; };
+		0E3D6C042243093A006CFCEA /* LMMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D6C032243093A006CFCEA /* LMMainRootViewController.m */; };
+		0E6447182248E374006C4CA5 /* UnsplashCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6447172248E374006C4CA5 /* UnsplashCollection.m */; };
+		0E64471B2248E384006C4CA5 /* UnsplashCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E64471A2248E384006C4CA5 /* UnsplashCategory.m */; };
+		0E64471E2248E3BE006C4CA5 /* UnsplashCoverPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E64471D2248E3BE006C4CA5 /* UnsplashCoverPhoto.m */; };
+		0E6447212248E3EC006C4CA5 /* UnsplashBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6447202248E3EC006C4CA5 /* UnsplashBadge.m */; };
+		0E6447242248E3FE006C4CA5 /* UnsplashUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6447232248E3FE006C4CA5 /* UnsplashUserProfile.m */; };
+		0E6447272248FD9E006C4CA5 /* UnsplashLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6447262248FD9E006C4CA5 /* UnsplashLink.m */; };
+		0EA5269E2244CD3500DACC97 /* NSDictionary+IsNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5269D2244CD3500DACC97 /* NSDictionary+IsNull.m */; };
+		0EA526A42244CFA200DACC97 /* UnsplashUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA526A32244CFA200DACC97 /* UnsplashUser.m */; };
+		0EA526A72244CFC100DACC97 /* UnsplashUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA526A62244CFC100DACC97 /* UnsplashUrl.m */; };
+		0EA526AA2244CFD900DACC97 /* UnsplashPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA526A92244CFD900DACC97 /* UnsplashPhoto.m */; };
+		0EA526AD2248D12500DACC97 /* UnsplashProfileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA526AC2248D12500DACC97 /* UnsplashProfileImage.m */; };
+		0EA9368C224312FD0000A98A /* LMDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9368B224312FD0000A98A /* LMDailyViewController.m */; };
+		0EA9368F2243130B0000A98A /* LMThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9368E2243130B0000A98A /* LMThemeViewController.m */; };
+		0EA93692224313190000A98A /* LMMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA93691224313190000A98A /* LMMarkViewController.m */; };
+		0EA936952243134D0000A98A /* LMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA936942243134D0000A98A /* LMMoreViewController.m */; };
+		0EA93698224325C50000A98A /* LMTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA93697224325C50000A98A /* LMTransitionAnimation.m */; };
+		0EE134382243C295006D4868 /* UrlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE134372243C295006D4868 /* UrlHelper.m */; };
+		0EE1343C2243C738006D4868 /* UnsplashPhotosParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1343B2243C738006D4868 /* UnsplashPhotosParam.m */; };
+		0EE1343F2243C7C4006D4868 /* UnsplashCategoriesParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1343E2243C7C4006D4868 /* UnsplashCategoriesParam.m */; };
+		0EE134422243C80E006D4868 /* UnsplashCategoryPhotosParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE134412243C80E006D4868 /* UnsplashCategoryPhotosParam.m */; };
+		0EE134452243C823006D4868 /* UnsplashCollectionsParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE134442243C823006D4868 /* UnsplashCollectionsParam.m */; };
+		0EE134482243C83A006D4868 /* UnsplashCollectionPhotosParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE134472243C83A006D4868 /* UnsplashCollectionPhotosParam.m */; };
+		0EE1346A2243DEA3006D4868 /* UnsplashStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE134692243DEA3006D4868 /* UnsplashStruct.m */; };
+		0EE1346D2243DEB3006D4868 /* UnsplashConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1346C2243DEB3006D4868 /* UnsplashConstants.m */; };
+		0EF5AF5722493182002EEF6E /* UnsplashUserProfileParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF5AF5622493182002EEF6E /* UnsplashUserProfileParam.m */; };
+		45E8565FAB1464A2F896AEBD /* libPods-lemonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D066477F790D32CE83ACF7 /* libPods-lemonUITests.a */; };
+		68E41B531AD036CFAB21DCE4 /* libPods-lemon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB71F171696A52F53090C802 /* libPods-lemon.a */; };
+		9D85B99D23AB414415D98B85 /* libPods-lemonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0B6E2CA811E77C5CCE4D99 /* libPods-lemonTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E3469CF2242FCA800199861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E3469AE2242FCA700199861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E3469B52242FCA700199861;
+			remoteInfo = lemon;
+		};
+		0E3469DA2242FCA800199861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E3469AE2242FCA700199861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E3469B52242FCA700199861;
+			remoteInfo = lemon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0037DE99C5357CC56A106D63 /* Pods-lemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemon.debug.xcconfig"; path = "Target Support Files/Pods-lemon/Pods-lemon.debug.xcconfig"; sourceTree = "<group>"; };
+		0E0609692243B7C700BBDBA6 /* UnsplashApiService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashApiService.h; sourceTree = "<group>"; };
+		0E06096A2243B7C700BBDBA6 /* UnsplashApiService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashApiService.m; sourceTree = "<group>"; };
+		0E06096C2243C00800BBDBA6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0E3469B62242FCA700199861 /* lemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3469B92242FCA700199861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E3469BA2242FCA700199861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E3469C02242FCA700199861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E3469C22242FCA800199861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E3469C52242FCA800199861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E3469C72242FCA800199861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E3469C82242FCA800199861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E3469CE2242FCA800199861 /* lemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3469D22242FCA800199861 /* lemonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lemonTests.m; sourceTree = "<group>"; };
+		0E3469D42242FCA800199861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E3469D92242FCA800199861 /* lemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3469DD2242FCA800199861 /* lemonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lemonUITests.m; sourceTree = "<group>"; };
+		0E3469DF2242FCA800199861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E3D6BFF2243090C006CFCEA /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		0E3D6C002243090C006CFCEA /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		0E3D6C022243093A006CFCEA /* LMMainRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMainRootViewController.h; sourceTree = "<group>"; };
+		0E3D6C032243093A006CFCEA /* LMMainRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMainRootViewController.m; sourceTree = "<group>"; };
+		0E6447162248E374006C4CA5 /* UnsplashCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCollection.h; sourceTree = "<group>"; };
+		0E6447172248E374006C4CA5 /* UnsplashCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCollection.m; sourceTree = "<group>"; };
+		0E6447192248E384006C4CA5 /* UnsplashCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCategory.h; sourceTree = "<group>"; };
+		0E64471A2248E384006C4CA5 /* UnsplashCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCategory.m; sourceTree = "<group>"; };
+		0E64471C2248E3BE006C4CA5 /* UnsplashCoverPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCoverPhoto.h; sourceTree = "<group>"; };
+		0E64471D2248E3BE006C4CA5 /* UnsplashCoverPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCoverPhoto.m; sourceTree = "<group>"; };
+		0E64471F2248E3EC006C4CA5 /* UnsplashBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashBadge.h; sourceTree = "<group>"; };
+		0E6447202248E3EC006C4CA5 /* UnsplashBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashBadge.m; sourceTree = "<group>"; };
+		0E6447222248E3FE006C4CA5 /* UnsplashUserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashUserProfile.h; sourceTree = "<group>"; };
+		0E6447232248E3FE006C4CA5 /* UnsplashUserProfile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashUserProfile.m; sourceTree = "<group>"; };
+		0E6447252248FD9E006C4CA5 /* UnsplashLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashLink.h; sourceTree = "<group>"; };
+		0E6447262248FD9E006C4CA5 /* UnsplashLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashLink.m; sourceTree = "<group>"; };
+		0EA5269C2244CD3500DACC97 /* NSDictionary+IsNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+IsNull.h"; sourceTree = "<group>"; };
+		0EA5269D2244CD3500DACC97 /* NSDictionary+IsNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+IsNull.m"; sourceTree = "<group>"; };
+		0EA526A22244CFA200DACC97 /* UnsplashUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashUser.h; sourceTree = "<group>"; };
+		0EA526A32244CFA200DACC97 /* UnsplashUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashUser.m; sourceTree = "<group>"; };
+		0EA526A52244CFC100DACC97 /* UnsplashUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashUrl.h; sourceTree = "<group>"; };
+		0EA526A62244CFC100DACC97 /* UnsplashUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashUrl.m; sourceTree = "<group>"; };
+		0EA526A82244CFD900DACC97 /* UnsplashPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashPhoto.h; sourceTree = "<group>"; };
+		0EA526A92244CFD900DACC97 /* UnsplashPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashPhoto.m; sourceTree = "<group>"; };
+		0EA526AB2248D12500DACC97 /* UnsplashProfileImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashProfileImage.h; sourceTree = "<group>"; };
+		0EA526AC2248D12500DACC97 /* UnsplashProfileImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashProfileImage.m; sourceTree = "<group>"; };
+		0EA9368A224312FD0000A98A /* LMDailyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMDailyViewController.h; sourceTree = "<group>"; };
+		0EA9368B224312FD0000A98A /* LMDailyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMDailyViewController.m; sourceTree = "<group>"; };
+		0EA9368D2243130B0000A98A /* LMThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMThemeViewController.h; sourceTree = "<group>"; };
+		0EA9368E2243130B0000A98A /* LMThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMThemeViewController.m; sourceTree = "<group>"; };
+		0EA93690224313190000A98A /* LMMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMarkViewController.h; sourceTree = "<group>"; };
+		0EA93691224313190000A98A /* LMMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMarkViewController.m; sourceTree = "<group>"; };
+		0EA936932243134D0000A98A /* LMMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMoreViewController.h; sourceTree = "<group>"; };
+		0EA936942243134D0000A98A /* LMMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMoreViewController.m; sourceTree = "<group>"; };
+		0EA93696224325C50000A98A /* LMTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMTransitionAnimation.h; sourceTree = "<group>"; };
+		0EA93697224325C50000A98A /* LMTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMTransitionAnimation.m; sourceTree = "<group>"; };
+		0EE134362243C295006D4868 /* UrlHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlHelper.h; sourceTree = "<group>"; };
+		0EE134372243C295006D4868 /* UrlHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlHelper.m; sourceTree = "<group>"; };
+		0EE1343A2243C738006D4868 /* UnsplashPhotosParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashPhotosParam.h; sourceTree = "<group>"; };
+		0EE1343B2243C738006D4868 /* UnsplashPhotosParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashPhotosParam.m; sourceTree = "<group>"; };
+		0EE1343D2243C7C4006D4868 /* UnsplashCategoriesParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCategoriesParam.h; sourceTree = "<group>"; };
+		0EE1343E2243C7C4006D4868 /* UnsplashCategoriesParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCategoriesParam.m; sourceTree = "<group>"; };
+		0EE134402243C80E006D4868 /* UnsplashCategoryPhotosParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCategoryPhotosParam.h; sourceTree = "<group>"; };
+		0EE134412243C80E006D4868 /* UnsplashCategoryPhotosParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCategoryPhotosParam.m; sourceTree = "<group>"; };
+		0EE134432243C823006D4868 /* UnsplashCollectionsParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCollectionsParam.h; sourceTree = "<group>"; };
+		0EE134442243C823006D4868 /* UnsplashCollectionsParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCollectionsParam.m; sourceTree = "<group>"; };
+		0EE134462243C83A006D4868 /* UnsplashCollectionPhotosParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashCollectionPhotosParam.h; sourceTree = "<group>"; };
+		0EE134472243C83A006D4868 /* UnsplashCollectionPhotosParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashCollectionPhotosParam.m; sourceTree = "<group>"; };
+		0EE134682243DEA3006D4868 /* UnsplashStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashStruct.h; sourceTree = "<group>"; };
+		0EE134692243DEA3006D4868 /* UnsplashStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashStruct.m; sourceTree = "<group>"; };
+		0EE1346B2243DEB3006D4868 /* UnsplashConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashConstants.h; sourceTree = "<group>"; };
+		0EE1346C2243DEB3006D4868 /* UnsplashConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashConstants.m; sourceTree = "<group>"; };
+		0EE1346E2243E528006D4868 /* UnsplashMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashMacros.h; sourceTree = "<group>"; };
+		0EE1346F2243EDFB006D4868 /* Unsplash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unsplash.h; sourceTree = "<group>"; };
+		0EF5AF5522493182002EEF6E /* UnsplashUserProfileParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsplashUserProfileParam.h; sourceTree = "<group>"; };
+		0EF5AF5622493182002EEF6E /* UnsplashUserProfileParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsplashUserProfileParam.m; sourceTree = "<group>"; };
+		1C99F052734B3E2EBA746A7D /* Pods-lemonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemonUITests.release.xcconfig"; path = "Target Support Files/Pods-lemonUITests/Pods-lemonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3433EBB1BD8AFD126B5D0EDD /* Pods-lemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemon.release.xcconfig"; path = "Target Support Files/Pods-lemon/Pods-lemon.release.xcconfig"; sourceTree = "<group>"; };
+		41A06B72E5F11FC25CA52568 /* Pods-lemonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemonTests.debug.xcconfig"; path = "Target Support Files/Pods-lemonTests/Pods-lemonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B30227511A7FBEBF2FCB8DF /* Pods-lemonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemonTests.release.xcconfig"; path = "Target Support Files/Pods-lemonTests/Pods-lemonTests.release.xcconfig"; sourceTree = "<group>"; };
+		63D066477F790D32CE83ACF7 /* libPods-lemonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lemonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8BC2A0015951BF6A23ED7F /* Pods-lemonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemonUITests.debug.xcconfig"; path = "Target Support Files/Pods-lemonUITests/Pods-lemonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0B6E2CA811E77C5CCE4D99 /* libPods-lemonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lemonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB71F171696A52F53090C802 /* libPods-lemon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lemon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E3469B32242FCA700199861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E41B531AD036CFAB21DCE4 /* libPods-lemon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3469CB2242FCA800199861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D85B99D23AB414415D98B85 /* libPods-lemonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3469D62242FCA800199861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E8565FAB1464A2F896AEBD /* libPods-lemonUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E0609672243B1DC00BBDBA6 /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				0EA5269B2244CBA200DACC97 /* Entity */,
+				0E0609682243B7A400BBDBA6 /* Api */,
+				0EE1345F2243DD14006D4868 /* Const */,
+				0EE134602243DD25006D4868 /* Macros */,
+				0EE134612243DD33006D4868 /* Tool */,
+				0EE134622243DD38006D4868 /* NetWork */,
+				0EE134632243DD44006D4868 /* Category */,
+				0EE134642243DD58006D4868 /* DataBase */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		0E0609682243B7A400BBDBA6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0EE134392243C4B5006D4868 /* UnsplashParams */,
+				0E0609692243B7C700BBDBA6 /* UnsplashApiService.h */,
+				0E06096A2243B7C700BBDBA6 /* UnsplashApiService.m */,
+				0EE134362243C295006D4868 /* UrlHelper.h */,
+				0EE134372243C295006D4868 /* UrlHelper.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		0E3469AD2242FCA700199861 = {
+			isa = PBXGroup;
+			children = (
+				0E3469B82242FCA700199861 /* lemon */,
+				0E3469D12242FCA800199861 /* lemonTests */,
+				0E3469DC2242FCA800199861 /* lemonUITests */,
+				0E3469B72242FCA700199861 /* Products */,
+				4CA36806B304C272141E5EBF /* Pods */,
+				2D634E5A3231E438DA1D6E1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E3469B72242FCA700199861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E3469B62242FCA700199861 /* lemon.app */,
+				0E3469CE2242FCA800199861 /* lemonTests.xctest */,
+				0E3469D92242FCA800199861 /* lemonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E3469B82242FCA700199861 /* lemon */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9368522430FDF0000A98A /* Main(主要) */,
+				0EE134502243D44A006D4868 /* Expand(扩展) */,
+				0EE134512243D45C006D4868 /* Resource(资源) */,
+				0EE1344E2243D3A5006D4868 /* Vender(第三方) */,
+				0E3469EB2242FCAE00199861 /* Program Files */,
+			);
+			path = lemon;
+			sourceTree = "<group>";
+		};
+		0E3469D12242FCA800199861 /* lemonTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E3469D22242FCA800199861 /* lemonTests.m */,
+				0E3469D42242FCA800199861 /* Info.plist */,
+			);
+			path = lemonTests;
+			sourceTree = "<group>";
+		};
+		0E3469DC2242FCA800199861 /* lemonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E3469DD2242FCA800199861 /* lemonUITests.m */,
+				0E3469DF2242FCA800199861 /* Info.plist */,
+			);
+			path = lemonUITests;
+			sourceTree = "<group>";
+		};
+		0E3469EB2242FCAE00199861 /* Program Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E3469C72242FCA800199861 /* Info.plist */,
+				0E3469C82242FCA800199861 /* main.m */,
+				0E06096C2243C00800BBDBA6 /* PrefixHeader.pch */,
+				0E3469BF2242FCA700199861 /* Main.storyboard */,
+				0E3469C22242FCA800199861 /* Assets.xcassets */,
+				0E3469C42242FCA800199861 /* LaunchScreen.storyboard */,
+			);
+			name = "Program Files";
+			sourceTree = "<group>";
+		};
+		0EA5269B2244CBA200DACC97 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0EA526A82244CFD900DACC97 /* UnsplashPhoto.h */,
+				0EA526A92244CFD900DACC97 /* UnsplashPhoto.m */,
+				0E6447252248FD9E006C4CA5 /* UnsplashLink.h */,
+				0E6447262248FD9E006C4CA5 /* UnsplashLink.m */,
+				0EA526A52244CFC100DACC97 /* UnsplashUrl.h */,
+				0EA526A62244CFC100DACC97 /* UnsplashUrl.m */,
+				0EA526A22244CFA200DACC97 /* UnsplashUser.h */,
+				0EA526A32244CFA200DACC97 /* UnsplashUser.m */,
+				0EA526AB2248D12500DACC97 /* UnsplashProfileImage.h */,
+				0EA526AC2248D12500DACC97 /* UnsplashProfileImage.m */,
+				0E6447162248E374006C4CA5 /* UnsplashCollection.h */,
+				0E6447172248E374006C4CA5 /* UnsplashCollection.m */,
+				0E6447192248E384006C4CA5 /* UnsplashCategory.h */,
+				0E64471A2248E384006C4CA5 /* UnsplashCategory.m */,
+				0E64471C2248E3BE006C4CA5 /* UnsplashCoverPhoto.h */,
+				0E64471D2248E3BE006C4CA5 /* UnsplashCoverPhoto.m */,
+				0E64471F2248E3EC006C4CA5 /* UnsplashBadge.h */,
+				0E6447202248E3EC006C4CA5 /* UnsplashBadge.m */,
+				0E6447222248E3FE006C4CA5 /* UnsplashUserProfile.h */,
+				0E6447232248E3FE006C4CA5 /* UnsplashUserProfile.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0EA9368522430FDF0000A98A /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				0E3469B92242FCA700199861 /* AppDelegate.h */,
+				0E3469BA2242FCA700199861 /* AppDelegate.m */,
+				0EE1344F2243D409006D4868 /* Base(基类) */,
+				0EA93686224312130000A98A /* Daily(每日推荐) */,
+				0EA93687224312260000A98A /* Theme(主题分类) */,
+				0EA93688224312370000A98A /* Mark(收藏) */,
+				0EA93689224312410000A98A /* More(更多) */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		0EA93686224312130000A98A /* Daily(每日推荐) */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9368A224312FD0000A98A /* LMDailyViewController.h */,
+				0EA9368B224312FD0000A98A /* LMDailyViewController.m */,
+			);
+			path = "Daily(每日推荐)";
+			sourceTree = "<group>";
+		};
+		0EA93687224312260000A98A /* Theme(主题分类) */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9368D2243130B0000A98A /* LMThemeViewController.h */,
+				0EA9368E2243130B0000A98A /* LMThemeViewController.m */,
+			);
+			path = "Theme(主题分类)";
+			sourceTree = "<group>";
+		};
+		0EA93688224312370000A98A /* Mark(收藏) */ = {
+			isa = PBXGroup;
+			children = (
+				0EA93690224313190000A98A /* LMMarkViewController.h */,
+				0EA93691224313190000A98A /* LMMarkViewController.m */,
+			);
+			path = "Mark(收藏)";
+			sourceTree = "<group>";
+		};
+		0EA93689224312410000A98A /* More(更多) */ = {
+			isa = PBXGroup;
+			children = (
+				0EA936932243134D0000A98A /* LMMoreViewController.h */,
+				0EA936942243134D0000A98A /* LMMoreViewController.m */,
+			);
+			path = "More(更多)";
+			sourceTree = "<group>";
+		};
+		0EE134392243C4B5006D4868 /* UnsplashParams */ = {
+			isa = PBXGroup;
+			children = (
+				0EE1343A2243C738006D4868 /* UnsplashPhotosParam.h */,
+				0EE1343B2243C738006D4868 /* UnsplashPhotosParam.m */,
+				0EE1343D2243C7C4006D4868 /* UnsplashCategoriesParam.h */,
+				0EE1343E2243C7C4006D4868 /* UnsplashCategoriesParam.m */,
+				0EE134402243C80E006D4868 /* UnsplashCategoryPhotosParam.h */,
+				0EE134412243C80E006D4868 /* UnsplashCategoryPhotosParam.m */,
+				0EE134432243C823006D4868 /* UnsplashCollectionsParam.h */,
+				0EE134442243C823006D4868 /* UnsplashCollectionsParam.m */,
+				0EE134462243C83A006D4868 /* UnsplashCollectionPhotosParam.h */,
+				0EE134472243C83A006D4868 /* UnsplashCollectionPhotosParam.m */,
+				0EF5AF5522493182002EEF6E /* UnsplashUserProfileParam.h */,
+				0EF5AF5622493182002EEF6E /* UnsplashUserProfileParam.m */,
+			);
+			path = UnsplashParams;
+			sourceTree = "<group>";
+		};
+		0EE1344E2243D3A5006D4868 /* Vender(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+				0E0609672243B1DC00BBDBA6 /* Unsplash */,
+			);
+			path = "Vender(第三方)";
+			sourceTree = "<group>";
+		};
+		0EE1344F2243D409006D4868 /* Base(基类) */ = {
+			isa = PBXGroup;
+			children = (
+				0EE1345B2243D5EA006D4868 /* BaseClass */,
+				0EE1345C2243D5F7006D4868 /* BaseView */,
+				0EE1345E2243D60A006D4868 /* BaseModel */,
+				0EE1345D2243D5FD006D4868 /* BaseController */,
+			);
+			path = "Base(基类)";
+			sourceTree = "<group>";
+		};
+		0EE134502243D44A006D4868 /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				0EE134542243D4A0006D4868 /* Const(常量) */,
+				0EE134552243D4B2006D4868 /* Macros(宏) */,
+				0EE134562243D4CD006D4868 /* Tool(工具类) */,
+				0EE134582243D515006D4868 /* Category(分类) */,
+				0EE134592243D52D006D4868 /* DataBase(数据库) */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		0EE134512243D45C006D4868 /* Resource(资源) */ = {
+			isa = PBXGroup;
+			children = (
+				0EE1345A2243D562006D4868 /* Plist */,
+				0EE134532243D476006D4868 /* Image */,
+				0EE134522243D46E006D4868 /* Global */,
+			);
+			path = "Resource(资源)";
+			sourceTree = "<group>";
+		};
+		0EE134522243D46E006D4868 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		0EE134532243D476006D4868 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		0EE134542243D4A0006D4868 /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
+		0EE134552243D4B2006D4868 /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		0EE134562243D4CD006D4868 /* Tool(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+				0EE134572243D4F8006D4868 /* Logger(日志) */,
+			);
+			path = "Tool(工具类)";
+			sourceTree = "<group>";
+		};
+		0EE134572243D4F8006D4868 /* Logger(日志) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Logger(日志)";
+			sourceTree = "<group>";
+		};
+		0EE134582243D515006D4868 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		0EE134592243D52D006D4868 /* DataBase(数据库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "DataBase(数据库)";
+			sourceTree = "<group>";
+		};
+		0EE1345A2243D562006D4868 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		0EE1345B2243D5EA006D4868 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				0EA93696224325C50000A98A /* LMTransitionAnimation.h */,
+				0EA93697224325C50000A98A /* LMTransitionAnimation.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		0EE1345C2243D5F7006D4868 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		0EE1345D2243D5FD006D4868 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				0E3D6BFF2243090C006CFCEA /* MainTabBarController.h */,
+				0E3D6C002243090C006CFCEA /* MainTabBarController.m */,
+				0E3D6C022243093A006CFCEA /* LMMainRootViewController.h */,
+				0E3D6C032243093A006CFCEA /* LMMainRootViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		0EE1345E2243D60A006D4868 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		0EE1345F2243DD14006D4868 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				0EE134682243DEA3006D4868 /* UnsplashStruct.h */,
+				0EE134692243DEA3006D4868 /* UnsplashStruct.m */,
+				0EE1346B2243DEB3006D4868 /* UnsplashConstants.h */,
+				0EE1346C2243DEB3006D4868 /* UnsplashConstants.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		0EE134602243DD25006D4868 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				0EE1346E2243E528006D4868 /* UnsplashMacros.h */,
+				0EE1346F2243EDFB006D4868 /* Unsplash.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		0EE134612243DD33006D4868 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0EE134622243DD38006D4868 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		0EE134632243DD44006D4868 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0EA5269C2244CD3500DACC97 /* NSDictionary+IsNull.h */,
+				0EA5269D2244CD3500DACC97 /* NSDictionary+IsNull.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0EE134642243DD58006D4868 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		2D634E5A3231E438DA1D6E1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB71F171696A52F53090C802 /* libPods-lemon.a */,
+				BD0B6E2CA811E77C5CCE4D99 /* libPods-lemonTests.a */,
+				63D066477F790D32CE83ACF7 /* libPods-lemonUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CA36806B304C272141E5EBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0037DE99C5357CC56A106D63 /* Pods-lemon.debug.xcconfig */,
+				3433EBB1BD8AFD126B5D0EDD /* Pods-lemon.release.xcconfig */,
+				41A06B72E5F11FC25CA52568 /* Pods-lemonTests.debug.xcconfig */,
+				4B30227511A7FBEBF2FCB8DF /* Pods-lemonTests.release.xcconfig */,
+				8C8BC2A0015951BF6A23ED7F /* Pods-lemonUITests.debug.xcconfig */,
+				1C99F052734B3E2EBA746A7D /* Pods-lemonUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E3469B52242FCA700199861 /* lemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3469E22242FCA800199861 /* Build configuration list for PBXNativeTarget "lemon" */;
+			buildPhases = (
+				0A6B88211CB8CABD47667CFE /* [CP] Check Pods Manifest.lock */,
+				0E3469B22242FCA700199861 /* Sources */,
+				0E3469B32242FCA700199861 /* Frameworks */,
+				0E3469B42242FCA700199861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lemon;
+			productName = lemon;
+			productReference = 0E3469B62242FCA700199861 /* lemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E3469CD2242FCA800199861 /* lemonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3469E52242FCA800199861 /* Build configuration list for PBXNativeTarget "lemonTests" */;
+			buildPhases = (
+				3F4AABE8D21B2874BED780FB /* [CP] Check Pods Manifest.lock */,
+				0E3469CA2242FCA800199861 /* Sources */,
+				0E3469CB2242FCA800199861 /* Frameworks */,
+				0E3469CC2242FCA800199861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E3469D02242FCA800199861 /* PBXTargetDependency */,
+			);
+			name = lemonTests;
+			productName = lemonTests;
+			productReference = 0E3469CE2242FCA800199861 /* lemonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E3469D82242FCA800199861 /* lemonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3469E82242FCA800199861 /* Build configuration list for PBXNativeTarget "lemonUITests" */;
+			buildPhases = (
+				93ABE046D43F3E44542FF1CB /* [CP] Check Pods Manifest.lock */,
+				0E3469D52242FCA800199861 /* Sources */,
+				0E3469D62242FCA800199861 /* Frameworks */,
+				0E3469D72242FCA800199861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E3469DB2242FCA800199861 /* PBXTargetDependency */,
+			);
+			name = lemonUITests;
+			productName = lemonUITests;
+			productReference = 0E3469D92242FCA800199861 /* lemonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E3469AE2242FCA700199861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "lei-wen";
+				TargetAttributes = {
+					0E3469B52242FCA700199861 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0E3469CD2242FCA800199861 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0E3469B52242FCA700199861;
+					};
+					0E3469D82242FCA800199861 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0E3469B52242FCA700199861;
+					};
+				};
+			};
+			buildConfigurationList = 0E3469B12242FCA700199861 /* Build configuration list for PBXProject "lemon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E3469AD2242FCA700199861;
+			productRefGroup = 0E3469B72242FCA700199861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E3469B52242FCA700199861 /* lemon */,
+				0E3469CD2242FCA800199861 /* lemonTests */,
+				0E3469D82242FCA800199861 /* lemonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E3469B42242FCA700199861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3469C62242FCA800199861 /* LaunchScreen.storyboard in Resources */,
+				0E3469C32242FCA800199861 /* Assets.xcassets in Resources */,
+				0E3469C12242FCA700199861 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3469CC2242FCA800199861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3469D72242FCA800199861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A6B88211CB8CABD47667CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lemon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F4AABE8D21B2874BED780FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lemonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93ABE046D43F3E44542FF1CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lemonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E3469B22242FCA700199861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF5AF5722493182002EEF6E /* UnsplashUserProfileParam.m in Sources */,
+				0EE1343C2243C738006D4868 /* UnsplashPhotosParam.m in Sources */,
+				0E06096B2243B7C700BBDBA6 /* UnsplashApiService.m in Sources */,
+				0EE134482243C83A006D4868 /* UnsplashCollectionPhotosParam.m in Sources */,
+				0EE1346D2243DEB3006D4868 /* UnsplashConstants.m in Sources */,
+				0EA9368C224312FD0000A98A /* LMDailyViewController.m in Sources */,
+				0E3469C92242FCA800199861 /* main.m in Sources */,
+				0EE1346A2243DEA3006D4868 /* UnsplashStruct.m in Sources */,
+				0E3D6C012243090C006CFCEA /* MainTabBarController.m in Sources */,
+				0EE134382243C295006D4868 /* UrlHelper.m in Sources */,
+				0E64471E2248E3BE006C4CA5 /* UnsplashCoverPhoto.m in Sources */,
+				0EA526A42244CFA200DACC97 /* UnsplashUser.m in Sources */,
+				0EA9368F2243130B0000A98A /* LMThemeViewController.m in Sources */,
+				0EA936952243134D0000A98A /* LMMoreViewController.m in Sources */,
+				0EE134422243C80E006D4868 /* UnsplashCategoryPhotosParam.m in Sources */,
+				0EE1343F2243C7C4006D4868 /* UnsplashCategoriesParam.m in Sources */,
+				0EA93692224313190000A98A /* LMMarkViewController.m in Sources */,
+				0EE134452243C823006D4868 /* UnsplashCollectionsParam.m in Sources */,
+				0E6447212248E3EC006C4CA5 /* UnsplashBadge.m in Sources */,
+				0EA526AA2244CFD900DACC97 /* UnsplashPhoto.m in Sources */,
+				0E64471B2248E384006C4CA5 /* UnsplashCategory.m in Sources */,
+				0E6447242248E3FE006C4CA5 /* UnsplashUserProfile.m in Sources */,
+				0EA93698224325C50000A98A /* LMTransitionAnimation.m in Sources */,
+				0EA526AD2248D12500DACC97 /* UnsplashProfileImage.m in Sources */,
+				0E6447272248FD9E006C4CA5 /* UnsplashLink.m in Sources */,
+				0EA5269E2244CD3500DACC97 /* NSDictionary+IsNull.m in Sources */,
+				0E3D6C042243093A006CFCEA /* LMMainRootViewController.m in Sources */,
+				0E3469BB2242FCA700199861 /* AppDelegate.m in Sources */,
+				0EA526A72244CFC100DACC97 /* UnsplashUrl.m in Sources */,
+				0E6447182248E374006C4CA5 /* UnsplashCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3469CA2242FCA800199861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3469D32242FCA800199861 /* lemonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3469D52242FCA800199861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3469DE2242FCA800199861 /* lemonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E3469D02242FCA800199861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E3469B52242FCA700199861 /* lemon */;
+			targetProxy = 0E3469CF2242FCA800199861 /* PBXContainerItemProxy */;
+		};
+		0E3469DB2242FCA800199861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E3469B52242FCA700199861 /* lemon */;
+			targetProxy = 0E3469DA2242FCA800199861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E3469BF2242FCA700199861 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E3469C02242FCA700199861 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E3469C42242FCA800199861 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E3469C52242FCA800199861 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E3469E02242FCA800199861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E3469E12242FCA800199861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E3469E32242FCA800199861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0037DE99C5357CC56A106D63 /* Pods-lemon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP87JJ479V;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/lemon/PrefixHeader.pch";
+				INFOPLIST_FILE = lemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lei-wen.lemon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E3469E42242FCA800199861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3433EBB1BD8AFD126B5D0EDD /* Pods-lemon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP87JJ479V;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/lemon/PrefixHeader.pch";
+				INFOPLIST_FILE = lemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lei-wen.lemon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0E3469E62242FCA800199861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A06B72E5F11FC25CA52568 /* Pods-lemonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP87JJ479V;
+				INFOPLIST_FILE = lemonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lei-wen.lemonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lemon.app/lemon";
+			};
+			name = Debug;
+		};
+		0E3469E72242FCA800199861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B30227511A7FBEBF2FCB8DF /* Pods-lemonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP87JJ479V;
+				INFOPLIST_FILE = lemonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lei-wen.lemonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lemon.app/lemon";
+			};
+			name = Release;
+		};
+		0E3469E92242FCA800199861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C8BC2A0015951BF6A23ED7F /* Pods-lemonUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP87JJ479V;
+				INFOPLIST_FILE = lemonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lei-wen.lemonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lemon;
+			};
+			name = Debug;
+		};
+		0E3469EA2242FCA800199861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C99F052734B3E2EBA746A7D /* Pods-lemonUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP87JJ479V;
+				INFOPLIST_FILE = lemonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lei-wen.lemonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lemon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E3469B12242FCA700199861 /* Build configuration list for PBXProject "lemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3469E02242FCA800199861 /* Debug */,
+				0E3469E12242FCA800199861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3469E22242FCA800199861 /* Build configuration list for PBXNativeTarget "lemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3469E32242FCA800199861 /* Debug */,
+				0E3469E42242FCA800199861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3469E52242FCA800199861 /* Build configuration list for PBXNativeTarget "lemonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3469E62242FCA800199861 /* Debug */,
+				0E3469E72242FCA800199861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3469E82242FCA800199861 /* Build configuration list for PBXNativeTarget "lemonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3469E92242FCA800199861 /* Debug */,
+				0E3469EA2242FCA800199861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E3469AE2242FCA700199861 /* Project object */;
+}
